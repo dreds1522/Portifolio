@@ -9,6 +9,7 @@
 body{
     width: 100%;
     height: 100vh;
+    
 }
 
 header{
@@ -44,13 +45,20 @@ header .menu ul li a{
 header .menu ul li a:hover{
     color: #156fc3;
 }
+header .menu-mobile{
+    display: none;
+}
+header .btn-mobile{
+    display: none;
+}
 
 /*==Main Home==*/
 #home .container{
     width: 100%;
     height: 100vh;
-    background: url(img/CREATIVE_inicio2.png);
+    background: url(img/teste.png);
     background-size: cover;
+    display: flex;
 }
 #home .container .icons{
     width: 10%;
@@ -106,7 +114,7 @@ header .menu ul li a:hover{
 #about .container{
     width: 100%;
     height: 100vh;
-    background: url(img/CREATIVE4.png);
+    background: url(img/teste\ 2.png);
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -180,7 +188,7 @@ header .menu ul li a:hover{
 #port .container{
     width: 100%;
     height: 100vh;
-    background: url(img/CREATIVE_3.png);
+    background: url(img/teste\ 3.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -277,7 +285,7 @@ header .menu ul li a:hover{
 #contact .container{
     width: 100%;
     height: 100vh;
-    background: url(img/CREATIVE_3.png);
+    background: url(img/teste\ 3.png);
     background-size: cover;
 }
 #contact .container .content-contact{
@@ -354,9 +362,239 @@ footer{
     background: rgba(0, 0, 0, 0.5);
     position: relative;
     top: -80px;
-    
-    
+    left: 0;
+    bottom: 0;
+ }
+ footer .icons{
+    letter-spacing: 20px;
+ }
+ footer .icons ion-icon{
+    padding: 5px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.3 ease;
 }
-footer a{
-    color: #2e8b57;
+ footer .icons ion-icon:hover{
+    color: #156fc3;
 }
+    
+
+/*==Responsividade==*/
+@media screen and (max-width: 1280px){
+    #home .container .icons ion-icon{
+       font-size: 1.5rem;
+    }
+    #port .container .card h1{
+        font-size: 3rem;
+        margin-top: 35px;
+       
+       
+    }
+    #port .container .card p{
+        width: 280px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    body{
+        background: url(img/teste\ 3.png);
+    }
+    header{
+        background: none;
+    }
+    header .logo{
+        width: 600px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+    }
+    header .btn-mobile ion-icon{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    header .menu-mobile{
+        display: none;
+        width: 40%;
+        height: 18vh;
+        box-shadow: 0 0 15px 0 rgba(21,111,195,0.5);
+        position: fixed;
+        top: 20px;
+        border-radius: 10px;
+        background: #156fc3;
+    }
+    header .menu-mobile ul{
+        text-align: center;
+    }
+    header .menu-mobile ul li{
+        list-style: none;
+        padding: 5px 0;
+    }
+    header .menu-mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #home .container .icons{
+        padding: 0 20px;
+    }
+    #home .container .title{
+        align-items: center;
+    }
+    #home .container .title h1{
+        font-size: 2rem;
+        margin-top: 250px;
+      
+    }
+    #home .container .title h2{
+        font-size: 1.5rem;
+        margin-top: 400px;
+    }
+    #about .container .title{
+        align-items: center;
+    }
+    #about .container .title h1{
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    #about .container .title p{
+        font-size: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about .container .box-title{
+        width: 100%;
+        height: 53vh;
+    }
+    #about .container .box-title .b1{
+        width: 100%;
+        
+    }
+    #about .container .box-title .b2{
+        width: 90%;
+    }
+    #about .container .box-title .b3{
+        width: 80%;
+    }
+    #about .container .box-title .b4{
+        width: 87%;
+    }
+    #about .container .box-title .b5{
+        width: 76%;
+    }
+    #port .container .card h1{
+        font-size: 3rem;
+        margin-top: 35px;
+    }
+    #port .container .card p{
+        width: 280px;
+        font-size: 0.9rem;
+    }
+    /*#port .container .card img{
+         width: 50%;
+         height: 50%;
+    }*/
+    #port .container .cards{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    #contact .container .content-contact{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact .content-contact .contact-left h1{
+        font-size: 1.5rem;
+    }
+    #contact .content-contact .contact-left ion-icon{
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact .contact-left span{
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact .contact-right h1{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    #contact .content-contact .contact-right input[type=email],
+    #contact .content-contact .contact-right input[type=text]{
+        padding: 5px 12px;
+        font-size: 1rem;
+    }
+    #contact .content-contact .contact-right textarea{
+        padding: 10px 15px;
+        font-size: 1rem;
+        width: 100%;
+        height: 120%;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        padding: 10px;
+    }
+    #home .container .title h2{
+        letter-spacing: 23px;
+        font-size: 1.5rem;
+        
+    }
+    #home .container .title h3{
+        letter-spacing: 20px;
+        
+    }
+    #about .container .title{
+        padding: 10px 60px;
+    }
+    #about .container .title p{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    #about .container .box-title{
+        width: 100%;
+        height: 40vh;
+    }
+    #about .container .box-title .b1{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    #about .container .box-title .b2{
+        width: 50%;
+    }
+    #about .container .box-title .b3{
+        width: 50%;
+    }
+    #about .container .box-title .b4{
+        width: 50%;
+    }
+    #about .container .box-title .b5{
+        width: 50%;
+    }
+    #port .container .card{
+        width: 50%;
+        height: 25%;
+    }
+    #port .container .card h1,p{
+        display: none;
+    }
+    #port .container .card button{
+        margin-top: 50%;
+        font-size: 9px;
+    }
+    #port .container .card a{
+        margin-top: 30%;
+    }
+            
+    
+}       

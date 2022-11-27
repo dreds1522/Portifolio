@@ -20,15 +20,27 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#port">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
     </header>
+
     <main id="home">
         <div class="container">
-            <div class="icons">
-                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href=""><ion-icon name="logo-github"></ion-icon></a>
-                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+            <!--div class="icons">
+                <a target="_blank"href="https://www.instagram.com/andre.sampaio.38/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a target="_blank"href="https://www.facebook.com/andre.sampaio.587"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a target="_blank"href=" https://www.github.com/dreds1522"><ion-icon name="logo-github"></ion-icon></a>
+                <a target="_blank"href="https://www.linkedin.com/in/andre-sampaio-a1471b164/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div-->
             <div class="title">
                 <h1>André Sampaio</h1>
                 <h2>Desenvolvedor</h2>
@@ -40,7 +52,11 @@
          <div class="container">
             <div class="title">
                 <h1>Olá, eu sou desenvolvedor Fullstack</h1>
-                <p>Há aproximadamente 15 anos na área administrativa, desempenhando praticamente todas as funções concernentes a área (Compas, vendas, financeiro, faturamento, logístico e etc.) neste momento me encontro em transição de carreira para a área de desenvolvimento web.</p>
+                <p>Há aproximadamente 15 anos na área administrativa, 
+                desempenhando praticamente todas as funções concernentes 
+                a área (Compas, vendas, financeiro, faturamento, logístico e etc.)
+                 neste momento me encontro em transição de carreira para a área de 
+                 desenvolvimento web.</p>
                 <div class="box-title">
                     <p>50%</p>
                     <div class="b1"><div class="b2"></div></div>
@@ -72,7 +88,7 @@
                     <h1>App barbearia</h1>
                     <p>Projeto acadêmico criado na linguagem Java, é uma aplicação destinada há um barbeiro para marcação de serviços, a interface foi criada com a netbeans.</p>
                     <button>Hire me</button>
-                    <a target="_blank" href="https://github.com/dreds1522/projeto_barbearia2">Projeto app barbearia</a>
+                    <a target="_blank" href="https://github.com/dreds1522/projeto_barbearia2">App barbearia</a>
                 </label>
                 <label class="card" for="item-2" id="song-2">
                     <img src="img/tarefas-sem-fundo.png" alt="">
@@ -91,7 +107,7 @@
             </div>
           </div>
     </section>
-    
+        
     <section id="contact">
           <div class="container">
              <div class="content-contact">
@@ -117,9 +133,23 @@
     </section>
 
     <footer>
-        <span>Copyright 2022 <a href="">FRONT</a> All Rights Reserved</span> 
+        <!--span>Copyright. 2022 <a href="">Fullstack</a> All Rights Reserved</span-->
+        <div class="icons">
+            <a target="_blank"href="https://www.instagram.com/andre.sampaio.38/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a target="_blank"href="https://www.facebook.com/andre.sampaio.587"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a target="_blank"href=" https://www.github.com/dreds1522"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank"href="https://www.linkedin.com/in/andre-sampaio-a1471b164/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
 </body>
 </html>
